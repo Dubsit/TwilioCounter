@@ -9,7 +9,7 @@ import (
 )
 
 var ryan int
-var abhi int
+var john int
 
 func main() {
         web.Get("/(.*)", hello)
@@ -21,10 +21,10 @@ func hello(ctx *web.Context, val string) string {
         if(k=="sms" && strings.Contains(v, "Ryan")) {
             ryan = ryan + 1
         }
-        if(k=="sms" && strings.Contains(v, "Abhi")){
-        	abhi = abhi + 1
+        if(k=="sms" && strings.Contains(v, "John")){
+        	john = john + 1
         }
     }
         fmt.Println()
-        return "at " + strconv.Itoa(ryan) + " for Ryan and " + strconv.Itoa(abhi) + " for Abhi"
+        return "at " + strconv.Itoa(ryan) + " for Ryan and " + strconv.Itoa(john) + " for John"
 }
