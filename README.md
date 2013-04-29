@@ -1,7 +1,7 @@
-Experimentation
+Twilio Counter
 =================
 
-Twilio Counter:
+SMS:
 - receiver.php
     Add to the Twilio Website
 - server_maps.go
